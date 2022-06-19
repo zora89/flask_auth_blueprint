@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 secret.py
+database.db
 *.py[cod]
 *$py.class
 # C extensions
