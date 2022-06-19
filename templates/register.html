@@ -1,3 +1,7 @@
+{% extends 'index.html' %}
+
+{%block content%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +16,18 @@
 
     <form method="POST" action="">
         {{ form.hidden_tag() }}
-        {{ form.name }}
+        &nbsp &nbsp{{ form.name }}
         <br>
-        {{ form.email }}
+        &nbsp &nbsp{{ form.email }}
         <br>
-        {{ form.password }}
+        &nbsp &nbsp{{ form.password }}
         <br><br>
-        {{ form.submit }}
+        &nbsp &nbsp{{ form.submit }}
     </form>
     <br>
-    <a href="{{url_for('login')}}"> Already have an account ? Sign In ! </a> <br><br>
+     &nbsp &nbsp Already have an account ?<a href="{{url_for('login')}}"> Sign In ! </a> <br><br>
     
 </body>
 </html>
+
+{% endblock %}
