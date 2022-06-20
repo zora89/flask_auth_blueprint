@@ -14,14 +14,15 @@
 <body>
     <h1>Login Page Coming Up</h1> 
     <br>
-    
+   
+
     <form method="POST" action="">
         {{ form.hidden_tag() }}
         &nbsp &nbsp{{ form.email }}
         <br>
         &nbsp &nbsp{{ form.password }}
         <br><br>
-        &nbsp &nbsp{{ form.submit }}
+        &nbsp &nbsp  {{form.submit(class="btn btn-outline-info")}}
     </form>
     <br>
     &nbsp &nbsp Don't have an account ? <a href="{{url_for('register')}}">Sign Up !  </a> 
