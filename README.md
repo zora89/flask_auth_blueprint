@@ -9,7 +9,7 @@ To use the repository above, follow the steps closely:
 3. Ensure all environment dependencies are installed using requirements.txt 
 4. Open a terminal window within the IDE or externally as last resort. 
 5. Run the python3 (python) replit, that displays : Python 3.x followed by this prompt ">>>"
-6. Ensure you are in project folders, with copied folders in it. Type the following:
+6. Type the following:
 - from app import db
 - db.create_all()
 - exit()
