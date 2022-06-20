@@ -1,5 +1,9 @@
 # flask_auth_one
 
+![Screenshot 2022-06-21 at 00 57 17](https://user-images.githubusercontent.com/42845567/174667163-283410d9-b981-4066-a0da-16238e433732.png)
+
+
+
 A complete authentication blueprint built using flask-login, SQLAlchemy, jinja2 templating engine and more. 
 
 To use the repository above, follow the steps closely: 
