@@ -13,4 +13,4 @@ To use the repository above, follow the steps closely:
 - from app import db
 - db.create_all()
 - exit()
-8. Start up the flask server with flask run or by running from IDE
+8. Start the flask server with flask run or by running from IDE, ENJOY!
