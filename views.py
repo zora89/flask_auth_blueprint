@@ -4,7 +4,7 @@ from flask import render_template, url_for, redirect
 import forms
 from flask_bcrypt import Bcrypt
 from models import User
-from app import bcrypt
+from app import bcrypt, db
 from flask_login import LoginManager
 
 
@@ -41,8 +41,8 @@ def register():
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data)
         new_user = User(name=form.name.data, email=form.email.data, password=hashed_password)
-        app.db.session.add(new_user)
-        app.db.session.commit()
+        db.session.add(new_user)
+        db.session.commit()
         print('database added')
         return redirect(url_for('login'))
         
