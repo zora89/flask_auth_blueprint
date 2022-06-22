@@ -5,6 +5,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+# import session on demand
 
 ##flask app initialised 
 app = Flask(__name__)
