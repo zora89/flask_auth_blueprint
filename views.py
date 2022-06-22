@@ -1,8 +1,7 @@
 from __main__ import app
-from flask_login import login_user, login_required, logout_user, current_user
+from flask_login import login_user, login_required, logout_user
 from flask import render_template, url_for, redirect
 import forms
-from flask_bcrypt import Bcrypt
 from models import User
 from app import bcrypt, db
 from flask_login import LoginManager
